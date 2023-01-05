@@ -18,9 +18,23 @@ ul {
 }
 
 a {
-    font-size: 0px;
     padding : 40px;
 }
 a[href*="pageaccueil.html"] {
+    font-size: 0px;
     background-image: url(logo.png);
 }
+
+a:link { 
+    text-decoration: none; 
+    color : black;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color : black;
+}
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
