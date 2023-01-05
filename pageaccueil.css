@@ -22,5 +22,5 @@ a {
     padding : 40px;
 }
 a[href*="pageaccueil.html"] {
-    background-image: url(/export/home/an22/nguyenh/DEV/web/SAE_web/logo.png);
+    background-image: url(logo.png);
 }
