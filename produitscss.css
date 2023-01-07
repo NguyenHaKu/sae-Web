@@ -1,0 +1,28 @@
+
+#menu {
+  display: none;
+}
+
+#menu-button {
+  display: block;
+  cursor: pointer;
+}
+
+#logo {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#products li {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
