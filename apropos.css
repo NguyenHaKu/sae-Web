@@ -1,0 +1,229 @@
+
+p {
+  margin: auto 8%;
+}
+
+.encadrement img{
+  border: solid 1px;
+ }
+.encadrement {
+  margin-top: 8%;
+}
+
+.centrage p{
+  text-align: left;
+}
+.centrage{
+  padding-top: 8%;
+  text-align: center;
+}
+
+.centrage2{
+	 text-align: center;
+}
+
+.centrage2 input {
+    width: 30%;
+    font-size: 16px;
+    margin: 4px auto;
+}
+textarea {
+    resize : none;
+    margin: 4px auto;
+    font-size: 16px;
+    height: 150px;
+    width: 30%;
+}
+
+header {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: bold;
+    font-size: 18px;
+    background-color: #457d58;
+    color: black;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
+
+li {
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li:first-child {
+    margin-right: auto;
+}
+
+li:not(:first-child) {
+    margin-left: auto;
+    margin : 0 27px;
+}
+
+a:link { 
+    text-decoration: none; 
+    color: black;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black;
+}
+
+a:hover { 
+    text-decoration: none;
+    color: white; }
+
+a:active { text-decoration: none; }
+
+a[href*="pageaccueil.html"] {
+    font-size: 0px;
+    padding: 30px 90px;
+    background-image: url(image/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+body {
+  margin: 0 15% 0 15%;
+  font-family: 'Tahoma', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  background-color: wheat;
+}
+
+.centre {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  font-size: 15px;
+  background-color: #457d58;
+  border-top: 1px solid gray;
+  padding-bottom: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),  0 0 20px rgba(0, 0, 0, 0.5);
+}
+footer p {
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #cce8cc;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #cce8cc;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #cce8cc;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.container {
+  margin: auto;
+  margin-top: 6%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  margin-bottom: 8%;
+}
+.container img {
+  border: 1px solid black;
+}
+
+a[href*="https://www.snapchat.com/"] {
+  font-size: 0px;
+  padding: 16px;
+  background-image: url(image/snapchat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a[href*="https://twitter.com/?lang=fr"] {
+  font-size: 0px;
+  padding: 16px;
+  background-image: url(image/twitter.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+a[href*="https://www.instagram.com/?hl=fr"] {
+  font-size: 0px;
+  padding: 16px;
+  background-image: url(image/instagram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a[href*="https://fr-fr.facebook.com/"] {
+  font-size: 0px;
+  padding: 16px;
+  background-image: url(image/facebook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bas a {
+  margin: 8px;
+}
+
+.bas {
+  background-color: #f0f2f4;
+  margin-top: 4%;
+  padding-top: 12px;
+  padding-bottom: 26px;
+  padding-left: 11%;
+}
