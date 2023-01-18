@@ -2,22 +2,29 @@
 <html lang="fr">
 	<head>
         <link href="produitscss.css" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/png" href="image/icon.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="image/icon.png" sizes="16x16">
+		<script src="navbar.js" defer></script>
 		<meta charset="utf-8">
 		<title>Produits</title>
 	</head>
-    
     <body>
+		<nav class="navbar">
+				<a href="pageaccueil.html" class="logo" >Accueil</a>
+				<a href="#" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+				<div class="navbar-links">
+					<ul>
+						<li><a href="produits.html" style="border-left: double; border-right: double; border-radius: 20px;">Nos Produits</a></li>
+						<li><a href="FAQs.html">FAQs</a></li>
+						<li><a href="apropos.html">A Propos</a></li>
+					</ul>
+				</div>
+		</nav>
 		<div class="centre" id="entete">
-		<header>
-			<ul>
-				<li><a href="pageaccueil.html">Accueil</a></li>
-				<li><a href="produits.html">Nos Produits</a></li>
-				<li><a href="FAQs.html"  target="_blank">FAQs </a></li>
-				<li><a href="apropos.html" target="_blank">A Propos</a></li>
-			</ul>
-		</header>
-        
+        <h1>Nos Produits</h1>
         <div class="product-grid">
             <div class="product-box">
                 <img src="image/Produit1.jpg" alt="product image">

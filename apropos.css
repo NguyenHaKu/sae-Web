@@ -1,3 +1,76 @@
+p {
+  margin: 2vh 4vw;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  padding: 0 12%;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #AFF476;
+  color: black;
+}
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  white-space: nowrap;
+  display: block;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  padding: 0 1.5rem;
+}
+
+.navbar-links li a:hover {
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.centre {
+  width: 75%;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.5);
+  padding-top: 3vh;
+  padding-bottom: 6%;
+}
 
 p {
   margin: auto 8%;
@@ -19,83 +92,38 @@ p {
 }
 
 .centrage2{
+  margin: auto;
 	 text-align: center;
 }
-
+.centrage2 form {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 7px;
+}
 .centrage2 input {
-    width: 30%;
+    width: 50vh;
     font-size: 16px;
-    margin: 4px auto;
+    margin: auto;
 }
 textarea {
     resize : none;
-    margin: 4px auto;
+    margin: auto;
     font-size: 16px;
     height: 150px;
-    width: 30%;
+    width: 50vh;
 }
-
-header {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-style: bold;
-    font-size: 18px;
-    background-color: #457d58;
-    color: black;
-    position: fixed;
-    width: 100%;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-}
-
-li {
-    display: inline-block;
-}
-ul {
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
-    padding: 2px;
-    display: flex;
-    justify-content: space-between;
-}
-
-li:first-child {
-    margin-right: auto;
-}
-
-li:not(:first-child) {
-    margin-left: auto;
-    margin : 0 27px;
-}
-
-a:link { 
-    text-decoration: none; 
-    color: black;
-}
-
-a:visited { 
-    text-decoration: none; 
-    color: black;
-}
-
-a:hover { 
-    text-decoration: none;
-    color: white; }
-
-a:active { text-decoration: none; }
 
 a[href*="pageaccueil.html"] {
     font-size: 0px;
     padding: 30px 90px;
-    background-image: url(image/logo.png);
+    background-image: url(image/logo2.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 
 body {
   margin: 0 15% 0 15%;
@@ -103,7 +131,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-size: 16px;
-  background-color: wheat;
+  background-color: #CAB6B2;
 }
 
 .centre {
@@ -115,18 +143,18 @@ body {
 
 footer {
   font-size: 15px;
-  background-color: #457d58;
+  background-color: #AFF476;
   border-top: 1px solid gray;
   padding-bottom: 2px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),  0 0 20px rgba(0, 0, 0, 0.5);
 }
 footer p {
-  margin-top: 1%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .button-5 {
+  margin: 0 auto;
   align-items: center;
   background-clip: padding-box;
   background-color: #cce8cc;
@@ -134,29 +162,19 @@ footer p {
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
-  color: black;
   cursor: pointer;
   display: inline-flex;
   font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  min-height: 4.5vh;
   position: relative;
-  text-decoration: none;
   transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+  width: 10vh;
 }
 
-.button-5:hover,
-.button-5:focus {
+.button-5:hover, .button-5:focus {
   background-color: #cce8cc;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
@@ -172,17 +190,26 @@ footer p {
 }
 
 .container {
-  margin: auto;
-  margin-top: 6%;
-  width: 80%;
+  font-size: 1.6vh;
+  width: 30%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 10px;
-  margin-bottom: 8%;
+  justify-content: center;
+  min-width: 100px;
 }
-.container img {
+.container2 {
+  justify-content: space-evenly;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-items: center;
+}
+.container2 img {
+  margin: 1.5vh auto;
+  width: 15vh;
+  height: 23vh;
   border: 1px solid black;
+  
 }
 
 a[href*="https://www.snapchat.com/"] {
@@ -216,14 +243,70 @@ a[href*="https://fr-fr.facebook.com/"] {
   background-repeat: no-repeat;
 }
 
-.bas a {
-  margin: 8px;
-}
-
 .bas {
+  display: flex;
+  align-items: flex-start;
+  gap: 3vh ;
   background-color: #f0f2f4;
   margin-top: 4%;
-  padding-top: 12px;
-  padding-bottom: 26px;
-  padding-left: 11%;
+  padding: 1vh;
+  padding-left: 4vh;
+}
+.centrage p {
+  padding-bottom: 4vh;
+}
+@media (max-width: 800px) {
+  .navbar {
+      padding: 0 3%;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+  .faq { 
+      max-width: 60vh;
+  }
+  h2 {
+    font-size: 2.7vh;
+  }
+  .faq p {
+    font-size: 2.1vh;
+  }
+  .centre {
+    width: 100%;
+    padding-bottom: 10vh;
+    box-shadow: none;
+  }
+  body {
+    background-color: white;
+  }
+  footer p {
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-size: 1.4vh;
+  }
 }

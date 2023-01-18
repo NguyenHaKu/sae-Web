@@ -1,105 +1,117 @@
-
-header {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-style: bold;
-    font-size: 18px;
-    background-color: #457d58;
-    color: black;
-    position: fixed;
-    width: 100%;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
+p {
+  margin: 2vh 4vw;
 }
 
-li {
-    display: inline-block;
+* {
+  box-sizing: border-box;
 }
-ul {
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
-    padding: 2px;
-    display: flex;
-    justify-content: space-between;
+.navbar {
+  padding: 0 12%;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #AFF476;
+  color: black;
 }
-
-li:first-child {
-    margin-right: auto;
-}
-
-li:not(:first-child) {
-    margin-left: auto;
-    margin : 0 27px;
+.navbar-links {
+  height: 100%;
 }
 
-a:link { 
-    text-decoration: none; 
-    color: black;
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-a:visited { 
-    text-decoration: none; 
-    color: black;
+.navbar-links li {
+  list-style: none;
 }
 
-a:hover { 
-    text-decoration: none;
-    color: white; }
+.navbar-links li a {
+  white-space: nowrap;
+  display: block;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  padding: 0 1.5rem;
+}
 
-a:active { text-decoration: none; }
+.navbar-links li a:hover {
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
 
 a[href*="pageaccueil.html"] {
     font-size: 0px;
     padding: 30px 90px;
-    background-image: url(image/logo.png);
+    background-image: url(image/logo2.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 footer {
     font-size: 15px;
-    background-color: #457d58;
+    background-color: #AFF476;
     border-top: 1px solid gray;
     padding-bottom: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),  0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 body {
-    margin: 0 15% 0 15%;
+    margin: auto;
     font-family: 'Tahoma', sans-serif;
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
-    background-color: wheat;
+    background-color: #CAB6B2;
 }
 
 .centre {
-    width: 80%;
+    width: 75%;
     margin: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.5);
-    padding-bottom: 2%;
+    padding-top: 3vh;
+    padding-bottom: 6%;
 }
 h1 {
-    padding-top: 8%;
+    padding-top: 5vh;
 }
 
+
 footer p {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 .faq {
+    width: 80%;
     max-width: 760px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 4vh;
   }
   .header2 {
-    margin-bottom: 70px;
+    margin-bottom: 4vh;
   }
   
   .header2 > p {
@@ -159,4 +171,60 @@ footer p {
   hr {
     color: #313133;
     margin-block: 20px;
+  }
+
+  @media (max-width: 800px) {
+    .navbar {
+        padding: 0 3%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .toggle-button {
+        display: flex;
+    }
+  
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+  
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .navbar-links ul li {
+        text-align: center;
+    }
+  
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+  
+    .navbar-links.active {
+        display: flex;
+    }
+    .faq { 
+        max-width: 60vh;
+    }
+    h2 {
+      font-size: 2.7vh;
+    }
+    .faq p {
+      font-size: 2.1vh;
+    }
+    .centre {
+      width: 100%;
+      padding-bottom: 10vh;
+      box-shadow: none;
+    }
+    body {
+      background-color: #CAB6B2;
+    }
+    footer p {
+      margin-left: 3vh;
+      margin-right: 3vh;
+      font-size: 1.4vh;
+    }
   }

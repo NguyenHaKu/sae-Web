@@ -2,23 +2,33 @@
 <html lang="fr">
 	<head>
         <link href="pageaccueil.css" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/png" href="image/icon.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="image/icon.png" sizes="16x16">
+		<script src="navbar.js" defer></script>
 		<meta charset="utf-8">
 		<title>EcoPriz</title>
 	</head>
     <body>
+		<nav class="navbar">
+			
+				<a href="pageaccueil.html" class="logo" >Accueil</a>
+				<a href="#" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+				<div class="navbar-links">
+					<ul>
+						<li><a href="produits.html">Nos Produits</a></li>
+						<li><a href="FAQs.html">FAQs</a></li>
+						<li><a href="apropos.html" >A Propos</a></li>
+					</ul>
+				</div>
+		</nav>
 		<div class="centre">
-		<header>
-			<ul>
-				<li><a href="pageaccueil.html">Accueil</a></li>
-				<li><a href="produits.html">Nos Produits</a></li>
-				<li><a href="FAQs.html">FAQs</a></li>
-				<li><a href="apropos.html" target="_blank">A Propos</a></li>
-			</ul>
-		</header>
 		<section>
 			<div class="catchphrase">
-				<p><bold>EcoPriz!</bold><br> <color grey>prises connectées écoresponables, écologique et économique </color></p>
+				<h1>EcoPriz!</h1>
+				<p>Prises connectées écoresponables, écologique et économique </p>
 			</div>
 			<div class="carousel">
 				<div class="container" style="background-color: #070707">
@@ -49,25 +59,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="galerie">
-				<input type="radio" name="position" checked />
-				<input type="radio" name="position" />
-				<input type="radio" name="position" />
-				<input type="radio" name="position" />
-				<input type="radio" name="position" />
-				<input type="radio" name="position" />
-				<main id="carousel">
-					<div class="item"><img src="image/Produit1.jpg" alt="image"></div>
-					<div class="item"><img src="image/Produit2.jpg" alt="image"></div>
-					<div class="item"><img src="image/Produit7.jpg" alt="image"></div>
-					<div class="item"><img src="image/Produit4.jpg" alt="image"></div>
-					<div class="item"><img src="image/Produit8.jpg" alt="image"></div>
-					<div class="item"><img src="image/Produit9.jpg" alt="image"></div>
-					<main>
-			</div>
-			
+				<a class="container2" href="produits.html">
+					<img class="el" src="image/Produit1.jpg" alt="image">
+					<img class="el" src="image/Produit2.jpg" alt="image">
+					<img class="el" src="image/Produit7.jpg" alt="image">
+					<img class="el" src="image/Produit4.jpg" alt="image">
+					<img class="el" src="image/Produit8.jpg" alt="image">
+					<img class="el" src="image/Produit9.jpg" alt="image">
+					<img class="el" src="image/Produit6.jpg" alt="image">
+				</a>
 		</section>
-		
 	</div>
 	<footer>
 		<p>† Nous utilisons votre emplacement pour afficher plus rapidement les options de livraison. 
@@ -77,3 +78,4 @@
 		<p style="font-size:12px">Site web créé par Eliott BRUN, Nathan BOUZON et Khuong NGUYEN</p>
 	</footer>
     </body>
+</html>
