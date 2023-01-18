@@ -116,7 +116,7 @@ textarea {
     width: 50vh;
 }
 
-a[href*="pageaccueil.html"] {
+a[href*="index.html"] {
     font-size: 0px;
     padding: 30px 90px;
     background-image: url(image/logo2.png);
